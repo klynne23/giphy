@@ -3,6 +3,28 @@ body {
     background-size: cover;
 }
 
+.gifTitle {
+    text-align: center; 
+    padding: 1%;
+    background-color:  rgba(250, 250, 250, .7);
+    margin-top: 1%;
+    width: 40%;
+    border-radius: 35px;
+    box-shadow: inset 0 0 30px 15px #f3d7d6;
+}
+
+.gifTitle.h1, h1 {
+    font-size: 5rem;
+    filter: blur(0px); 
+    color: white;
+    text-shadow: 3px 3px 15px black;  
+}
+
+.btnform {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
 .buttonClass {
     text-align: center;
     margin-top: 1%;
@@ -32,7 +54,7 @@ label {
 }
 
 #add-topic {
-    margin-top: .5%;
+    margin-top: 1%;
     color: white;
     text-shadow: 2px 2px 1px black;
     background-image: linear-gradient(#FC466B, #3F5EFB);
