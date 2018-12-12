@@ -1,9 +1,13 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-var topics = ["dog", "cat", "snake", "shark", "whale", "parrot", "bearded dragon"];
+var topics2 = ["hugh jackman", "ryan reynolds", "chris pratt", "chris hemsworth", "steve carell", "jake gyllenhaal", "jesse spencer", "gordon ramsay", "jim carrey", "joel mchale"];
+var topics1 = ["toy story", "a bugs life", "toy story 2", "monsters inc", "finding nemo", "ratatouille", "inside out", "the good dinosaur"]
+var topics3 = ["joel mchale", "sal vulcano", "joe gatto", "tina belcher", "aaron hotchner", "spencer reid", "gordon ramsay"]
+var topics = ["hells kitchen", "bobs burgers", "everybody loves raymond", "criminal minds", "survivor", "house md", "community", "chicago fire", "impractical jokers"]
 
+
+// generate buttons in the topics array when the page loads
 generateButtons();
-
 
 // function to clear out buttons-view div and render a button for each element in topics
 function generateButtons() {
@@ -85,10 +89,28 @@ function displayGifs() {
       // create a new <img> element for the gifs
       var img = $('<img>');
       img.addClass("gifImage");
-      img.attr("src", response.data[i].images.fixed_width.url);
+      img.attr("src", response.data[i].images.fixed_width_still.url);
+      img.attr("data-still", response.data[i].images.fixed_width_still.url);
+      img.attr("data-animate", response.data[i].images.fixed_width.url);
+      img.attr("data-state", "still");
       gifDiv.append(img);
 
       $("#gifs-view").append(gifDiv);
     } // end for loop
   }); // end .then function
 } // end displayGifs function
+
+// tracking any clicks on the gifImage class
+$(document).on("click", ".gifImage", clickGifs);
+
+function clickGifs() {
+  var state = $(this).attr("data-state");
+  
+  if (state === "still") {
+    $(this).attr("src", $(this).attr("data-animate"));
+    $(this).attr("data-state", "animate");
+  } else {
+    $(this).attr("src", $(this).attr("data-still"));
+    $(this).attr("data-state", "still");
+  }
+}
