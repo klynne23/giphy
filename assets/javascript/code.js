@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-var topics = ["hugh jackman", "ryan reynolds", "chris pratt", "chris hemsworth", "steve carell", "jake gyllenhaal", "gordon ramsay", "jim carrey", "joel mchale", "dwayne johnson", "paul rudd", "robert downey jr"];
+var topics = ["hugh jackman", "ryan reynolds", "chris pratt", "chris hemsworth", "steve carell", "jake gyllenhaal", "jeremy renner", "jim carrey", "joel mchale", "dwayne johnson", "paul rudd", "robert downey jr"];
 var topics1 = ["toy story", "a bugs life", "toy story 2", "monsters inc", "finding nemo", "ratatouille", "inside out", "the good dinosaur"]
 var topics2 = ["hells kitchen", "bobs burgers", "everybody loves raymond", "criminal minds", "survivor", "house md", "community", "chicago fire", "impractical jokers", "parks and rec", "the walking dead"]
 
