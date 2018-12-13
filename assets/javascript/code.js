@@ -49,6 +49,7 @@ $("#add-topic").on("click", function (event) {
 
   // call the generate buttons function to display all buttons in the topic array
   generateButtons();
+  $("#topic-input").val('');
 
 }); // end on.click function
 
