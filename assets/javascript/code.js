@@ -1,9 +1,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-var topics2 = ["hugh jackman", "ryan reynolds", "chris pratt", "chris hemsworth", "steve carell", "jake gyllenhaal", "jesse spencer", "gordon ramsay", "jim carrey", "joel mchale"];
+var topics = ["hugh jackman", "ryan reynolds", "chris pratt", "chris hemsworth", "steve carell", "jake gyllenhaal", "gordon ramsay", "jim carrey", "joel mchale", "dwayne johnson", "paul rudd", "robert downey jr"];
 var topics1 = ["toy story", "a bugs life", "toy story 2", "monsters inc", "finding nemo", "ratatouille", "inside out", "the good dinosaur"]
-var topics3 = ["joel mchale", "sal vulcano", "joe gatto", "tina belcher", "aaron hotchner", "spencer reid", "gordon ramsay"]
-var topics = ["hells kitchen", "bobs burgers", "everybody loves raymond", "criminal minds", "survivor", "house md", "community", "chicago fire", "impractical jokers"]
+var topics2 = ["hells kitchen", "bobs burgers", "everybody loves raymond", "criminal minds", "survivor", "house md", "community", "chicago fire", "impractical jokers", "parks and rec", "the walking dead"]
 
 
 // generate buttons in the topics array when the page loads
